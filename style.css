@@ -18,6 +18,7 @@ body{
     border-radius: 30px;
     display: flex;
     padding: 18px 22px;
+    box-shadow: #B32D38 0px 0px 20px;
 }
 .player{
     max-width: 290px;
