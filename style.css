@@ -1,0 +1,80 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color:white;
+    text-align: center;
+}
+body{
+    background-color: #232323;
+}
+.wrapper{
+    margin-top: 10%;
+    max-width: 340px;
+    height: 455px;
+    background-color: #1C1C1C;
+    border-radius: 30px;
+    display: flex;
+    padding: 18px 22px;
+}
+.player{
+    max-width: 290px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .cover{
+        margin: 18px 0px;
+        .cover_img{
+            width: 200px;
+            height: 200px;
+            border-radius: 1000px;
+            &.active{
+                animation: rotate 5s linear infinite;
+            }
+        }
+    }
+    .progress_container{
+        margin: 25px 0px;
+        max-width: 290px;
+        height: 6px;
+        background-color: #666666;
+        border-radius: 1000px;
+        cursor: pointer;
+        .progress{
+            margin: 0;
+            /* width: 125px; */
+            height: 6px;
+            background-color: #B32D38;
+            border-radius: 1000px;
+        }
+    }
+    .buttons_controlls{
+        display: flex;
+        align-items: center;
+        .play{
+            margin: 0px 60px;
+        }
+        .img_src{
+            width: 32px;
+            height: 38px;
+        }
+    }
+    .btn{
+        cursor: pointer;
+    }
+    .btn:nth-child(1){
+        transform: scaleX(-1);
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
